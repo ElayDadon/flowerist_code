@@ -8,6 +8,7 @@ private:
 	vector<string> bouquet;
 	bool isArranged;
 public:
+	FlowersBouquet(vector<string>, bool);
 	void arrange();
 };
 

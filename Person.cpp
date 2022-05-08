@@ -3,18 +3,23 @@
 #include <iostream>
 #include "FlowersBouquet.h"
 #include <vector>
+
+#include "Florist.h"
 using namespace std;
-class Person
-{
-private:
-	string name;
-public:
-	Person(string name) : name(name) {}
-	void orderFlowers(Florist* florist, Person* person, vector<string> flowers) {
-		
-	}
-	string getName()
+
+
+Person::Person(string name) : name(name) {}
+void Person::orderFlowers(Florist* florist, Person* person, vector<string> flowers) {
+	string flowersStr;
+	for (string flower : flowers)
 	{
-		return name;
+		flowersStr = flowersStr + flower + " ";
 	}
-};
+	cout << getName() << " orders flowers to" << person->getName() << " from " << florist->getName() << ": " << flowersStr << endl;;
+	florist->acceptOrder(person, flowers);
+}
+string Person::getName()
+{
+	return name;
+}
+
