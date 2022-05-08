@@ -11,11 +11,12 @@ using namespace std;
 class Florist : public Person
 {
 private:
-	Wholesaler* wholeSaler;
+	Wholesaler* wholesaler;
 	FlowerArranger* flowerArranger;
 	DeliveryPerson* deliveryPerson;
 public:
 	Florist(string, Wholesaler*, FlowerArranger*, DeliveryPerson*);
 	void acceptOrder(Person*, vector<string>);
+	string getName();
 };
 

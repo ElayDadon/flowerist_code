@@ -3,6 +3,8 @@
 #include "FlowersBouquet.h"
 #include <iostream>
 #include <vector>
+
+#include "person.h"
 using namespace std;
 
 
@@ -13,4 +15,5 @@ private:
 public:
 	Wholesaler(string, Grower*);
 	FlowersBouquet* acceptOrder(vector<string>);
+	string getName();
 };

@@ -12,4 +12,5 @@ private:
 public:
 	Grower(string ,Gardener*);
 	FlowersBouquet* prepareOrder(vector<string>);
+	string getName();
 };
