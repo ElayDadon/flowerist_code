@@ -7,7 +7,8 @@
 using namespace std;
 
 Gardener::Gardener(string name):Person(name)
-{}
+{
+}
 
 string Gardener::getName()
 {

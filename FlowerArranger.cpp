@@ -2,7 +2,11 @@
 #include "FlowerArranger.h"
 #include "Person.h"
 
-class FlowerArranger : public Person
-{
+//Yosef Avraham Hadad
+	void FlowerArranger::arrangeFlowers(FlowersBouquet* flowerBouquet) {
+		cout << getName() << " arranges Flowers\n";
+	}
+	string FlowerArranger::getName() {
+		return "Flower Arranger " + Person::getName();
+	}
 
-};

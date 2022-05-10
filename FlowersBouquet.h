@@ -5,10 +5,11 @@ using namespace std;
 class FlowersBouquet
 {
 private:
-	vector<string> bouquet;
 	bool isArranged;
 public:
+	vector<string> bouquet;
 	FlowersBouquet(vector<string>, bool);
+	vector<string> getBouquet();
 	void arrange();
 };
 

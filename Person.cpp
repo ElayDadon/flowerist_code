@@ -22,4 +22,11 @@ string Person::getName()
 {
 	return name;
 }
+void Person::acceptFlowers(FlowersBouquet* flowers) {
+	cout << getName() << " accepts the flowers: ";
 
+	for (size_t i = 0; i<flowers.bouquet.size(); i++)
+	{
+
+	}
+}
